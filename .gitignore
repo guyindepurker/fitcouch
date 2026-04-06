@@ -9,9 +9,7 @@ next.user-config.*
 
 # Environment variables
 .env*.local
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+
 
 # Common ignores
 node_modules
