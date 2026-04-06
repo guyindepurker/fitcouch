@@ -32,15 +32,15 @@ const Gtag = () => (
 export const metadata: Metadata = {
   title: 'FitCouch - Coming Soon',
   description: 'FitCouch By Shaul Haham - Fitness & Nutrition Coaching. Coming Soon.',
-  generator: 'v0.app',
+  generator: 'FitCouch',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/apple-icon.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/apple-icon.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
@@ -61,7 +61,7 @@ export default function RootLayout({
     <html lang="en">
             <Gtag />
 
-      <body className={`${rubik.className} antialiased`}>
+      <body className={`${rubik.className} antialiased site`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

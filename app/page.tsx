@@ -109,68 +109,42 @@ export default function Home() {
   return (
     <div
       ref={containerRef}
-      className="min-h-screen bg-background text-foreground flex items-center justify-center px-4 overflow-hidden"
+      className="min-h-screen bg-fit text-foreground flex items-center justify-center px-4 overflow-hidden"
     >
       <main className="w-full max-w-2xl text-center">
-        {/* Logo */}
-        <div ref={logoRef} className="mb-12">
-          <Image
-            src="/logo.png"
-            alt="FitCouch Logo"
-            width={400}
-            height={120}
-            className="mx-auto h-auto"
-            priority
-          />
-        </div>
+   
 
-        {/* Title */}
         <div ref={titleRef}>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-balance">
+          <h1 className="text-5xl space-letter-bg main-text md:text-7xl font-bold tracking-tight mb-6 text-balance">
             Coming Soon
           </h1>
         </div>
 
-        {/* Subtitle */}
-        <div ref={subtitleRef} className="mb-16">
-          <p className="text-lg md:text-2xl text-muted-foreground font-light">
+        <div ref={subtitleRef} className="mb-16 text-container-by">
+          <p className="text-lg by-text color-white space-letter md:text-2xl text-muted-foreground font-light main-text ">
             By Shaul Haham
           </p>
         </div>
 
-        {/* Icon */}
-        {/* <div ref={iconRef} className="mb-20 flex justify-center">
-          <div className="p-8 bg-secondary rounded-3xl">
-            <Image
-              src="/icon.png"
-              alt="FitCouch Icon"
-              width={180}
-              height={180}
-              className="h-auto"
-            />
-          </div>
-        </div> */}
+
        
-        {/* Bottom Section */}
         <div
           ref={bottomSectionRef}
           className="border-t border-border pt-12 space-y-8"
         >
           <div>
-            <p className="text-base md:text-lg text-foreground font-medium mb-2">
+            <p className="text-base space-letter-sm md:text-lg text-foreground font-medium mb-2">
               Keep Updated on Social Media
             </p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm main-text space-letter-sm text-muted-foreground">
               Follow us for exclusive updates and fitness tips
             </p>
           </div>
 
-          {/* Social Icons */}
           <div
             ref={socialIconsRef}
             className="flex justify-center gap-8 md:gap-12"
           >
-            {/* TikTok */}
             <a
               href="https://tiktok.fit-couch.com"
               className="hover:opacity-75 transition-opacity duration-300 transform hover:scale-110"
@@ -185,7 +159,6 @@ export default function Home() {
               </svg>
             </a>
 
-            {/* Instagram */}
             <a
               href="https://instagram.fit-couch.com" target="_blank" rel="noopener noreferrer"
               className="hover:opacity-75 transition-opacity duration-300 transform hover:scale-110"
@@ -202,7 +175,6 @@ export default function Home() {
               </svg>
             </a>
 
-            {/* Email */}
             <a
               href="mailto:fitcouch10@gmail.com"
               className="hover:opacity-75 transition-opacity duration-300 transform hover:scale-110"
@@ -219,12 +191,21 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Coming Soon Text */}
           <div className="pt-8 border-t border-border">
-            <p className="text-xs md:text-sm text-muted-foreground tracking-widest uppercase">
+            <p className="text-xs color-white space-letter-bg main-text md:text-sm text-muted-foreground tracking-widest uppercase">
               Coming Soon
             </p>
           </div>
+            <div  className="mb-20 logo flex justify-center">
+            <Image
+            
+              src="/icon.png"
+              alt="FitCouch Icon"
+              width={80}
+              height={100}
+              className="h-auto"
+            />
+        </div> 
         </div>
       </main>
     </div>

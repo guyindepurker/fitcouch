@@ -123,3 +123,50 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.site {
+    background-image: url(/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      position: relative;
+}
+.site::before {
+    /* background-color: #232323 !important; */
+      content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* שכבת כהה */
+    z-index: 0;
+}
+.bg-fit {
+    position: relative;
+    z-index: 1;
+}
+
+.main-text {
+  text-shadow: 0px 0px 36px rgba(0, 0, 0, 0.84);
+}
+.space-letter {
+  letter-spacing: 5px;
+}
+
+.space-letter-sm {
+  letter-spacing: 2.5px;
+}
+
+
+.text-container-by {
+margin-top: -18px;
+}
+.by-text {
+  letter-spacing: 7px;
+}
+.space-letter-bg {
+  letter-spacing: 16px;
+}
+.color-white {
+  color: white;
+
+}
